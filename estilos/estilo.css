@@ -1,0 +1,12 @@
+/********* estilos personalizados para la web de R&R **********/
+
+.bg-light-violet {background-color: rgb(146, 114, 167);}
+
+.jumbotron {background-image: url("../imagenes/hero.jpg");
+            background-size: cover;
+            height:90vh;}
+#jumbotron-text {background-color:  rgba(146, 114, 167, 0.5);
+                 }
+.abajo {position:absolute !important;
+        bottom:20px;
+        }
