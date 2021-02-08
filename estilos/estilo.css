@@ -1,12 +1,22 @@
 /********* estilos personalizados para la web de R&R **********/
-
+/******** layout general *******/
+.bg-opacity-dark {background-color: rgba(0, 0, 0, 0.5);}
+.titulo-seccion {text-align:center;
+                 color:azure;
+                 margin:20px auto;}
+/******* navbar ***********/
 .bg-light-violet {background-color: rgb(146, 114, 167);}
 
+
+/***** hero section ********/
 .jumbotron {background-image: url("../imagenes/hero.jpg");
             background-size: cover;
+            background-position: 55%;
             height:90vh;}
 #jumbotron-text {background-color:  rgba(146, 114, 167, 0.5);
                  }
 .abajo {position:absolute !important;
         bottom:20px;
         }
+
+.card-img-top {width:80% !important;}
