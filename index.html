@@ -161,12 +161,41 @@
             <div class="container">
                 <div class="row"><!-- -->
                     <div class="col-sm-6 col-lg-3 my-5">
+                      <!-- primera de mis cards. Voy a incluirle una ventana modal -->
                       <div class="card" >
                         <img src="https://i.picsum.photos/id/532/400/400.jpg?hmac=dEUVUak-a90uHWNDqwPlaQB4oNj1lgdlXtS4wlOllAs" class="card-img-top m-4" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title" data-toggle="tooltip" data-placement="bottom" title="Los viejos rockeros nunca mueren">Rolling Stones</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Leer más</button>
+                          <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Rolling Stones</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        Consectetur excepturi harum nostrum fugit ipsa, eius aut vero voluptatibus quia autem laboriosam facilis tenetur sit perspiciatis minima repellendus voluptatum non velit, atque, provident perferendis distinctio quisquam hic omnis. Exercitationem.
+        Quia sapiente quidem alias ut, obcaecati eos fugit dolor nihil odit at. Nihil repellat labore laborum reiciendis praesentium modi! Officiis voluptatibus porro ad voluptatem libero iusto nisi aliquam corporis atque?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
                         </div>
                       </div>
                     </div>
@@ -210,6 +239,12 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <script>
+      /* esto es una llamada a una función jquery necesaria para activar el comportamiento
+         de tooltip */
+      $(function () {
+           $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
 </body>
 </html>
